@@ -1,0 +1,301 @@
+#body  {
+  width: auto;
+  margin-right: 100px;
+  margin-left: 100px; 
+  margin-top:30px;
+  margin-bottom:30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding: 20px;
+}
+@media screen and (max-width:760px) {
+  #body {
+    margin-right: 90px;
+    margin-left: 90px; 
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+}
+
+body {margin: 10px;}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover   {
+  color: white;
+  text-decoration: none;
+}
+@font-face {
+font-family: "BloggerSans-Bold";
+src: url("BloggerSans-Bold.eot");
+src: url("BloggerSans-Bold.woff") format("woff");
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 1;
+  padding-right: 30px;
+  padding-top: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 1;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+ul.topnav li a:hover:not(.active) {color: black;}
+
+ul.topnav li a.active {
+  background-color: white;
+  color: #4BC289;
+  font-family: BloggerSans-Bold;
+  font-size: 40px;
+}
+
+ul.topnav li.right {float: right;
+  padding: 5px 5px;
+  padding-left:6px;
+  padding-right:6px;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+.img1 {
+  padding: 130px;
+  text-align: center;
+  background-image: url('bkgimg3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+
+.img2 {
+  padding: 130px;
+  text-align: center;
+  background-image: url('bkgimg5.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+.img3 {
+  padding: 160px;
+  text-align: center;
+  background-image: url('bkgimg4.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+
+.img3 .btn {
+  position: absolute;
+  top:185%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #4BC289;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.4s;  
+  text-align: center;
+}
+
+.img3 .btn:hover {
+  background-color: black;
+  color: white;
+}
+.img4 {
+  padding: 120px;
+  text-align: center;
+  background-image: url('bkgimg6.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+.img5 {
+  padding: 120px;
+  text-align: center;
+  background-image: url('bkgimg8.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+.img6 {
+  padding: 120px;
+  text-align: center;
+  background-image: url('bkgimg9.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+.img7 {
+  padding: 120px;
+  text-align: center;
+  background-image: url('bkgimg10.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+.img8 {
+  padding: 120px;
+  text-align: center;
+  background-image: url('bkgimg11.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 p {
+  font-family: "Georgia",serif;
+  font-size: 50px;
+  font-style: italic;
+  color:white;
+}
+
+.header{
+  font-family: "Georgia",serif;
+  font-size: 30px;
+}
+.text{
+  font-family:Arial;
+  font-size: 17px;
+}
+
+
+/*testimonies*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; font-size: 20px; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #B1EDD0;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;  
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: white;
+  background-color: #B1EDD0;
+  
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #B1EDD0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #4BC289;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+  font-size: 20px;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+  margin-top: 10px;
+}
+

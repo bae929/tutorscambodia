@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Tutors Cambodia</title>
+        <link rel="stylesheet" href="deco.css">	
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon (1).ico" />
+        
+
+    </head>
+    	<body>
+            <ul class="topnav">
+                <li><a class="active" href="home.html">Tutors Cambodia</a></li>
+                <li class="right"><a href="register.html">Sign Up</a></li>
+                <li class="right"><a href="contactus.html">Contact Us</a></li>
+                <li class="right"><a href="pricing.html">Pricing</a></li>   
+                <li class="right"><a href="tutors.html">Tutors</a></li>
+                <li class="right"><a href="mission.html">Mission</a></li>
+                <li class="right"><a href="home.html">Home</a></li>
+  
+</ul>
+
+    </body>
+        <div class="img1">
+            <p>Education for Cambodia</p>
+        </div>
+        <div class="img2">
+            <p>Connecting Students with Tutors</p>
+        </div>
+        <div class="img3">
+            <p>Quality and Affordable Education</p>
+            <a href="register.html"><button class="btn">Join Us</button></a>
+        </div>
+        <div id="body">
+            <p class="header">Student Testimonies</p>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <q>Tutors Cambodia has helped me immensely with my studies! Thank you so much!</q>
+                    <p class="author">- Student Name</p>
+                </div>
+            <div class="mySlides">
+              <q>I didn't realize how much help I needed before using Tutors Cambodia. I got my first A!</q>
+              <p class="author">- Student Name</p>
+            </div>
+            <div class="mySlides">
+              <q>I want to thank the tutors at Tutors Cambodia for helping me so much. They were considerate, helpful, and honest. Would recommmend.</q>
+              <p class="author">- Student Name</p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                }
+        </script>
+        </div>
+    </body>
+    	
+</html>
