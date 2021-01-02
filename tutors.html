@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create three equal profiles that floats next to each other */
+        .profile {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+        }
+        @media screen and (max-width:1000px) {
+          .profile {
+            width: 50%;
+          }
+        }
+        @media screen and (max-width:650px) {
+          .profile {
+            width: 100%;
+          }
+        }
+        /* Clear floats after the profiles */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          max-width: 300px;
+          margin: auto;
+          text-align: center;
+          font-family: "Poppins";
+        }
+        .card h1 {
+            font-size:25px;
+        }
+        .card p {
+            font-size:16px;
+        }
+
+        .title {
+          color: grey;
+          font-size: 16px;
+        }
+
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #4BC289;
+          opacity:0.9
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          font-size: 18px;
+          border-radius: 10px;
+        }
+        .button:hover {
+        opacity: 0.8;
+        }
+        a {
+          text-decoration: none;
+          color:white;
+        }
+
+        
+        /*star rating*/
+        .checked {
+            color: gold;
+        }
+        /*viewprofile*/
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .image {
+            opacity: 1;
+            display: block;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .card:hover .image {
+          opacity: 0.3;
+        }
+
+        .card:hover .middle {
+          opacity: 1;
+        }
+
+
+    </style>
+	<head>
+        <title>Tutors | Tutors Cambodia</title>
+        <link rel="stylesheet" href="deco.css">	
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon (1).ico" />
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+    </head>
+    </body>
+        <ul class="topnav">
+            <li><a class="active" href="home.html">Tutors Cambodia</a></li>
+            <li class="right"><a href="register.html">Sign Up</a></li>
+            <li class="right"><a href="contactus.html">Contact Us</a></li>
+            <li class="right"><a href="pricing.html">Pricing</a></li> 
+            <li class="right"><a href="tutors.html">Tutors</a></li>
+            <li class="right"><a href="mission.html">Mission</a></li>
+            <li class="right"><a href="home.html">Home</a></li>
+  
+        </ul>
+        <div class="img4">
+            <p>Tutors</p>
+        </div>
+        <div id="body">
+            <p class="header">Meet our tutors</p>
+            <div class="row">
+                <div class="profile" style="background-color:none;">
+                    <div class="card">
+                        <img src="man.png" alt="John" class="image" style="width:100%">
+                        <div class="middle">
+                            <a href="johndoe.html"><div class="button">Visit Profile</div></a>
+                        </div>
+                        <h1>John Doe</h1>
+                        <p class="title">Math, English, Science</p>
+                        <p>Logos International School</p>
+                        <div style="margin: 10px ;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="profile" style="background-color:none;">
+                    <div class="card">
+                        <img src="man.png" alt="Jane" class="image" style="width:100%">
+                        <div class="middle">
+                            <div class="button">Visit Profile</div>
+                        </div>
+                        <h1>Jane Doe</h1>
+                        <p class="title">English</p>
+                        <p>Logos International School</p>
+                        <div style="margin: 10px;">
+                          <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="profile" style="background-color:none;">
+                    <div class="card">
+                        <img src="man.png" alt="James" class="image" style="width:100%">
+                        <div class="middle">
+                            <div class="button">Visit Profile</div>
+                        </div>
+                        <h1>James Bond</h1>
+                        <p class="title">Math, Science</p>
+                        <p>Logos International School</p>
+                        <div style="margin: 10px;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="profile" style="background-color:none;">
+                    <div class="card">
+                        <img src="man.png" alt="Julie" class="image" style="width:100%">
+                        <div class="middle">
+                            <div class="button">Visit Profile</div>
+                        </div>
+                        <h1>Julie Smith</h1>
+                        <p class="title">Math, English, Science</p>
+                        <p>Logos International School</p>
+                        <div style="margin: 10px;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
